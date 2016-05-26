@@ -1,1 +1,12 @@
-/**/
+#name-container {
+	text-align: center;
+	font-size: 130px;
+}
+
+#ui-container {
+	text-align:center;
+}
+
+#pick {
+	font-size:32px;
+}
