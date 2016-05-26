@@ -16,13 +16,13 @@
   max-width: 860px;
   background: rgba(0,0,0,.5);
   margin: 100px auto 0;
-  padding-top: 10px;
+  padding-top: 30px;
+  line-height: 180px;
 }
 
 h1 {
 	font-weight: normal;
 	color: #eaeaea;
-	/*text-shadow: 0 0 10px #000;*/
 	margin: 0;
 }
 
