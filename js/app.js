@@ -1,15 +1,26 @@
-var names = [
-	"Joe",
-	"Pat",
-	"Sally"
-]
+$(function(){
+	var picked = []
+	var names = [
+		"Joe",
+		"Pat",
+		"Sally"
+	]
 
-var picked = []
+	var $nameContainer = $('#name-container')
+	var $pick = $('#pick')
 
-function pickName(arr){
-	picked.push(arr.splice(Math.floor(Math.random() * arr.length), 1).join(''))
-	if(names.length < 1) {
-		names = picked.concat()
-		picked = []
+	function pickName(){
+		picked.push(names.splice(Math.floor(Math.random() * names.length), 1).join(''))
+		console.log("Names:", names)
+		console.log("Picked:", picked)
+		$nameContainer.html(picked[picked.length - 1])
+		if(names.length == 0) {
+			names = picked.concat()
+			picked = []
+		}
 	}
-}
+
+	$pick.click(function(){
+		pickName()
+	})
+})
