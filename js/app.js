@@ -1,11 +1,5 @@
 $(function(){
 	var picked = []
-	var names = [
-		'Name 1',
-		'Name 2',
-		'Name 3'
-	]
-
 	var animations = ["rotateIn", "rotateInUpLeft", "rotateInDownRight", "bounceIn", "bounceInUp", "flipInX", "flipInY", "lightSpeedIn", "rollIn", "zoomIn"]
 
 	var $body = $('body')
